@@ -1,0 +1,148 @@
+
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{array}
+    \usepackage{textcomp}
+    \usepackage{varwidth}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage[hidelinks]{hyperref}
+    \hypersetup{
+      colorlinks=true, linkcolor=black, urlcolor=blue
+    }
+    \urlstyle{same}
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    %==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+  {\Huge \scshape {Swarnim Barapatre}}\\
+  Kalyani Nagar, Pune $\cdot$ swarnim335@gmail.com $\cdot$ 8149833469 $\cdot$ \href{https://github.com/swarnimcodes/}{GitHub} $\cdot$ \href{https://www.codechef.com/users/b_swarniim}{CodeChef} \\
+\end{center}
+
+%==== Education ====%
+      \header{Education}
+
+      \textbf{BITS, Pilani}\hfill Goa\\
+Dual Degree BE Chemical Engineering + MSc Biological Sciences \hfill May 2019 - Aug 2024\\
+
+\vspace{2mm}
+
+%==== Experience ====%
+      \header{Work Experience}
+      \vspace{1mm}
+
+      \textbf{Mastersoft} \hfill Nagpur\\
+          \textit{Software Developer} \hfill Aug 2023 - June 2024\\
+          \vspace{-1mm}
+      \begin{itemize} \itemsep 1pt
+            \item Spearheaded the development and maintenance of diverse variety of projects
+            \item Developed and implemented innovative solutions such as an Employee Productivity Measurement, OpenAI APIs, and 
+            Website Vulnerability Scanner at Mastersoft, 
+            showcasing a strong blend of technical expertise and vision in software development
+            \item Implemented robust automation systems for Azure Blob Storage \& MS-SQL Server to streamline repetitive operations and reduce human error
+            \item Achieved significant cost savings notably via Employee Productivity System and SQL Suite of Tools
+            \item Developed numerous APIs using with robust error-handling and security features leveraging Bearer Tokens and JWTs
+            \item Played a pivotal role in resolving critical Linux issues across company-wide servers, minimizing downtime and data loss risks
+      \end{itemize}
+
+% \vspace{2mm}
+
+\header{Skills}
+\begin{tabular}{V{5cm} @{\hskip 0.6cm} V{12cm}}
+Skilled: & Python, Flask, FastAPI, Linux Servers \\
+Intermediate: & Powershell, Bash Scripting, Git, Vim, \LaTeX, Nginx, MS-SQL, Go \\
+Beginner: & C, C++, Java, Pascal, DSA \\
+\end{tabular}
+
+\vspace{4mm}
+
+\header{Projects}
+      {\textbf{Employee Performance System}}\hfill \href{https://github.com/swarnimcodes/employee-performance}{Git}\\
+Crafted and developed the Employee Performance System, an innovative tool that streamlines productivity tracking by offering a cost-effective, and robust solution. This system not only enhances employee efficiency but also enables confident remote recruitment. The development removes the need of purchasing an exeternal service, resulting in a substantial annual cost saving of Rs 53 Lakhs annually. The success of this project paves the way for future market launch and revenue generation. Technologies used: Python, Psutil, Requests, Threading, Win32 APIs, Powershell, Pascal, Windows Task Scheduler, etc.\\
+\vspace*{2mm}
+      {\textbf{Persistent Queue System}}\hfill \href{https://github.com/swarnimcodes/kafkaesqueue}{Git}\\
+Developed the Persistent Queue System to automate time-intensive tasks efficiently, enabling remote task addition and FIFO completion. The system features a persistent queue that ensures resilience against system crashes, with ongoing development to introduce optional asynchronicity for enhanced processing speed. Technologies used: Python, FastAPI, JSON.\\
+\vspace*{2mm}
+      {\textbf{OpenAI APIs}}\hfill \href{https://github.com/swarnimcodes/openai-gen-co-and-qp}{Git}\\
+Developed a suite of APIs, harnessing the power of GPT-3.5 and GPT-4 to enhance educational practices through automated grading, report generation, textbook-based question paper generator, and dynamic course outcome creation. Technologies used: Python, Flask, FastAPI, MS-SQL, etc.\\
+\vspace*{2mm}
+      {\textbf{MS-SQL Suite of Tools }}\hfill \href{https://github.com/swarnimcodes/Sequel}{Git}\\
+Crafted the MS-SQL Suite of Tools, a robust set of utilities tailored for SQL developers and database administrators to streamline workflow processes. Designed to automate tasks, the tools include features such as identifying undropped temporary tables, comparing stored procedures across databases, and visualizing differences in a color-coded HTML format. Technologies used: Python, Difflib, Sqlparse, and MS-SQL.\\
+\vspace*{2mm}
+
+\vspace{2mm}
+%==== Extra Curriculars ====%
+      \header{Extra Curriculars}
+      \vspace{1mm}
+
+      \textbf{Swimming} 
+          \vspace{-1mm}
+      \begin{itemize} \itemsep 1pt
+            \item Represented Maharashtra in National Level Swimming Competitions multiple times (SFI and School Nationals)
+            \item Multiple times State Level Championship Gold Medalist
+      \end{itemize}
+
+    \end{document}
