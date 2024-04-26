@@ -36,11 +36,15 @@ colorlinks=true, urlcolor=blue
 \hspace*{-18pt} \hrulefill \\
 }
 
-\newcommand{\header} [1] {
-{\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+% \newcommand{\header} [1] {
+% {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+% \vspace*{-6pt} \lineunder
+% }
+
+\newcommand{\header}[1]{%
+{\hspace*{-18pt}\vspace*{6pt} \textsc{\textbf{\Large{#1}}}}%
 \vspace*{-6pt} \lineunder
 }
-
 \newcommand{\employer} [3] {
 { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
 }
@@ -85,7 +89,7 @@ Kalyani Nagar, Pune $\cdot$ swarnim335@gmail.com $\cdot$ 8149833469 $\cdot$ \hre
 %==== Education ====%
 \header{Education}
 
-\textbf{BITS, Pilani}\hfill Goa\\
+{\textbf{BITS, Pilani}}\hfill Goa\\
 Dual Degree: BE Chemical Engineering + MSc Biological Sciences \hfill May 2019 - Aug 2024\\
 
 \vspace{2mm}
@@ -98,13 +102,14 @@ Dual Degree: BE Chemical Engineering + MSc Biological Sciences \hfill May 2019 -
 \textit{Software Developer} \hfill Aug 2023 - June 2024\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-\item Spearheaded the development and maintenance of diverse variety of projects
 \item Developed and implemented innovative solutions such as an Employee Productivity Measurement, OpenAI APIs, and 
 Website Vulnerability Identifier, showcasing a strong blend of technical expertise and vision in software development
 \item Implemented robust automation systems for Azure Blob Storage \& MS-SQL Server to streamline repetitive operations and reduce human error
-\item Achieved significant cost savings notably via Employee Productivity System and SQL Suite of Tools
-\item Developed numerous APIs using with robust error-handling and security features leveraging Bearer Tokens and JWTs
-\item Played a pivotal role in resolving critical Linux issues across company-wide servers, minimizing downtime and data loss risks
+% \item Achieved significant cost savings notably via Employee Productivity System and SQL Suite of Tools
+\item Developed APIs adhering to industry standards, prioritizing reliabilty and efficiency. 
+\item Implemented thorough error-handling procedures, fortifying systems against potential failures.
+\item Played a pivotal role in resolving critical Linux issues across company-wide servers, 
+minimizing downtime and data loss risks
 \end{itemize}
 
 % \vspace{2mm}
@@ -126,41 +131,43 @@ Beginner: & C, C++, Java, Pascal, DSA \\
 \vspace{1mm}
 
 {\textbf{Employee Performance System}}\hfill \href{https://github.com/swarnimcodes/employee-performance}{Git}\\
-Designed and developed the Employee Performance System, an innovative tool that 
-streamlines productivity tracking by offering a cost-effective, and robust solution. 
+Designed and developed the Employee Performance System, an innovative multi-tenant application that 
+streamlines productivity tracking by offering a cost-effective and intuitive solution. 
 This system not only enhances employee efficiency but also enables confident 
-remote recruitment. The development removes the need of purchasing an 
-exeternal service, resulting in a substantial annual cost saving of Rs 53 Lakhs annually. 
+remote recruitment. This application eliminated the reliance on external services, 
+leading to an impressive annual cost reduction of \textbf{Rs 53 Lakhs}. 
 The success of this project positions the organization for future market expansion,
-and revenue generation.
-
-Technologies used: Python, Psutil, Requests, Threading, Win32 APIs, Powershell, Pascal, Windows Task Scheduler, etc.\\
+and revenue generation. \\
+Languages: Python, Powershell, Pascal \\
+Libraries: Psutil, Win32 APIs, Threading, Requests, etc \\
 \vspace*{2mm}
 
 {\textbf{Persistent Queue System}}\hfill \href{https://github.com/swarnimcodes/kafkaesqueue}{Git}\\
 Developed the Persistent Queue System to automate time-intensive tasks efficiently, 
 enabling remote task addition and FIFO completion. The system features a persistent 
 queue that ensures resilience against system crashes, with ongoing development to 
-introduce optional asynchronicity for enhanced processing speed. 
-
-Technologies used: Python, FastAPI, JSON.\\
+introduce optional asynchronicity for enhanced processing speed. \\
+Languages: Python \\
+Libraries: FastAPI, Asyncio, Pydantic, Httpx, etc \\
 \vspace*{2mm}
 
 {\textbf{OpenAI APIs}}\hfill \href{https://github.com/swarnimcodes/openai-gen-co-and-qp}{Git}\\
 Developed a suite of APIs, harnessing the power of GPT-3.5 and GPT-4 to enhance educational practices 
 through automated grading, report generation, textbook-based question paper generator, and 
-dynamic course outcome creation. 
-
-Technologies used: Python, Flask, FastAPI, PyODBC, MS-SQL, etc.\\
+dynamic course outcome creation. \\
+Languages: Python, MS-SQL \\
+Libraries: Flask, FastAPI, PyODBC \\
 \vspace*{2mm}
 
 {\textbf{MS-SQL Suite of Tools }}\hfill \href{https://github.com/swarnimcodes/Sequel}{Git}\\
 Crafted the MS-SQL Suite of Tools, a robust set of utilities tailored for SQL developers 
 and database administrators to streamline workflow processes. Designed to automate tasks, 
-the tools include features such as identifying undropped temporary tables, comparing 
-stored procedures across databases, and visualizing differences in a color-coded HTML format. 
+the tools include features such as optimizing memory consumption by identifying memory leaks, 
+comparing stored procedures across databases, and visualizing their differences via automated reports and 
+split diff views. \\
+Languages: Python \\
+Libraries: Difflib, Sqlparse, PyODBC \\
 
-Technologies used: Python, Difflib, Sqlparse, and MS-SQL.\\
 \vspace*{2mm}
 
 \vspace{2mm}
@@ -168,11 +175,6 @@ Technologies used: Python, Difflib, Sqlparse, and MS-SQL.\\
 \header{Extra Curriculars}
 \vspace{1mm}
 
-\textbf{Swimming} 
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-\item Represented Maharashtra in National Level Swimming Competitions multiple times (SFI and School Nationals)
-\item Multiple times State Level Championship Gold Medalist
-\end{itemize}
+\textbf{Swimming}: Represented Maharashtra in Swimming Nationals. Multiple State Level Gold Medalist.
 
 \end{document}
