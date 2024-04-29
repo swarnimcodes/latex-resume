@@ -3,6 +3,6 @@ Resume in LaTeX
 
 # Compilation
 
-```sh
+```bash
 $ pdflatex /path/to/resume.tex
 ```
