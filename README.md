@@ -22,7 +22,7 @@ Make your edits to `src/resume.tex`
 Compile using pdflatex
 
 ```bash
-$ pdflatex /path/to/resume.tex
+$ pdflatex src/resume.tex
 ```
 
 ## Requirements
