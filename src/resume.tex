@@ -8,6 +8,9 @@
 \usepackage{varwidth}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
+
+\setlist[itemize]{itemsep=0pt, topsep=0pt}
 \textheight=10in
 \pagestyle{empty}
 \raggedright
@@ -60,7 +63,7 @@ colorlinks=true, urlcolor=blue
 
 \newenvironment{achievements}{
 \begin{list}
-{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+{$\bullet$}{\topsep{0pt} \itemsep{-2pt}}}{\vspace*{4pt}
 \end{list}
 }
 
@@ -89,27 +92,44 @@ Kalyani Nagar, Pune $\cdot$ swarnim335@gmail.com $\cdot$ 8149833469 $\cdot$ \hre
 %==== Education ====%
 \header{Education}
 
-{\textbf{BITS, Pilani}}\hfill Goa\\
-Dual Degree: BE Chemical Engineering + MSc Biological Sciences \hfill May 2019 - Aug 2024\\
+{\textbf{BITS, Pilani}}\hfill May 2019 -- Aug 2024\\
+Dual Degree: BE Chemical Engineering + MSc Biological Sciences %\hfill May 2019 - Aug 2024\\
 
 \vspace{4mm}
 
 %==== Experience ====%
 \header{Work Experience}
 \vspace{1mm}
-
-\textbf{Mastersoft} \hfill Nagpur\\
-\textit{Intern, Software Developer} \hfill Aug 2023 - June 2024\\
+\textbf{Intern, Software Engineer, R\&D Department, Mastersoft} \hfill Aug 2023 -- Jun 2024 \\
+% \textbf{Mastersoft} \hfill Nagpur\\
+% \textit{Software Development Engineer, R\&D Department} \hfill Aug 2023 - June 2024\\
 \vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-\item Developed and implemented innovative solutions such as an Employee Productivity Measurement, OpenAI APIs, and 
-Website Vulnerability Identifier, showcasing a strong blend of technical expertise and vision in software development
-\item Implemented robust automation systems for Azure Blob Storage \& MS-SQL Server to streamline repetitive operations and reduce human error
-% \item Achieved significant cost savings notably via Employee Productivity System and SQL Suite of Tools
-\item Developed APIs adhering to industry standards, prioritizing reliabilty and efficiency. 
-\item Implemented thorough error-handling procedures, fortifying systems against potential failures.
-\item Played a pivotal role in resolving critical Linux issues across company-wide servers, 
-minimizing downtime and data loss risks
+\begin{itemize}
+    % \item Developed the Employee Productivity Measurement System from ground-up, eliminating the
+    % need for \href{https://desktime.com/}{DeskTime} subscriptions. \\
+    % \item Enhanced educational practices within the ERP by engineering a suite of OpenAI powered APIs. \\
+    % \item Automated the identification and mitigation of security vulnerabilites across company websites by
+    % developing a Website Vulnerability Identificatier.
+    % \item Automated operations for Azure Blob Storage and Microsoft SQL Server, resulting in reduction 
+    % in operation's completion time, human effort and error surface area. \\
+    % \item Resolved critical Linux server issues, reducing downtime and mitigating data loss risks. \\
+
+    \item As part of the R\&D team, my role was to transform lofty, unachievable and vague
+    business ideas and transform them into tangible solutions and turn them into reality.
+    Apart from that I also intensively worked in building crafty automation solutions
+    mainly for the administration and management of Microsoft SQL Server and Azure Cloud Storage.
+    My role also encompassed building internal tools that ease the development processes in the
+    organisation.
+    Due to my passion and knowledge of linux, i also guided the system administrators in the
+    organisation to solve critical linux issues that risked hours of system downtime and loss
+    of data and code.
+    Due to my passion and curiosity of programming languages, my role also encompassed
+    researching about technologies that aren't utilised in the organisation.
+    Because of this, I was able to learn and develop an intuitive and feature-rich installation wizards
+    for windows applications in an esoteric and then unknown language to me i.e. Pascal.
+    Due to my adaptability, vision, and grasping power, i was also able to co-design scalable and robust
+    system infrastructure for high-frequency high-traffic products from the ground up with the head of
+    r&d in an exclusive team of 3.
 \end{itemize}
 
 % \vspace{2mm}
@@ -118,9 +138,12 @@ minimizing downtime and data loss risks
 \vspace{1mm}
 
 \begin{tabular}{V{5cm} @{\hskip 0.6cm} V{12cm}}
-Skilled: & Python, Flask, FastAPI, Linux Servers \\
-Intermediate: & Powershell, Bash Scripting, Git, Vim, \LaTeX, Nginx, MS-SQL, Go \\
-Beginner: & C, C++, Java, Pascal, DSA \\
+% Skilled: & Python, Flask, FastAPI, Linux Servers \\
+% Intermediate: & Powershell, Bash Scripting, Git, Vim, \LaTeX, Nginx, MS-SQL, Go \\
+% Beginner: & C, C++, Java, Pascal, DSA \\
+\textbf{Languages:} & Python, Go, Powershell, Bash, C, C++, Java, Pascal \\
+\textbf{Frameworks:} & Flask, FastAPI, Microsoft SQL Server \\
+\textbf{Tools:} & Linux, Git, Vim, Emacs, Nginx, \LaTeX{} \\
 \end{tabular}
 
 \vspace{4mm}
@@ -131,52 +154,76 @@ Beginner: & C, C++, Java, Pascal, DSA \\
 \vspace{1mm}
 
 {\textbf{Employee Performance System}}\hfill \href{https://github.com/swarnimcodes/employee-performance}{Git}\\
-Designed and developed the Employee Performance System, an innovative multi-tenant application that 
-streamlines productivity tracking by offering a cost-effective and intuitive solution. 
-This system not only enhances employee efficiency but also enables confident 
-remote recruitment. This application eliminated the reliance on external services, 
-leading to an impressive annual cost reduction of \textbf{Rs 53 Lakhs}. 
-The success of this project positions the organization for future market expansion,
-and revenue generation. \\
-Key features include atomic app updates without the need of user intervention,
-live-updating configuration system, and encrypted logs for enhanced security. \\
-Languages: Python, Powershell, Pascal \\
-Libraries: Psutil, Win32 APIs, Threading, Pydantic, Requests, etc \\
-\vspace*{2mm}
-
-{\textbf{Persistent Queue System}}\hfill \href{https://github.com/swarnimcodes/kafkaesqueue}{Git}\\
-Developed the Persistent Queue System to automate time-intensive tasks efficiently, 
-enabling remote task addition and FIFO completion. The system features a persistent 
-queue that ensures resilience against system crashes, with ongoing development to 
-introduce optional asynchronicity for enhanced processing speed. \\
-Languages: Python \\
-Libraries: FastAPI, Asyncio, Pydantic, Httpx, etc \\
-\vspace*{2mm}
-
-{\textbf{OpenAI APIs}}\hfill \href{https://github.com/swarnimcodes/openai-gen-co-and-qp}{Git}\\
-Developed a suite of APIs, harnessing the power of GPT-3.5 and GPT-4 to enhance educational practices 
-through automated grading, report generation, textbook-based question paper generator, and 
-dynamic course outcome creation. \\
-Languages: Python, MS-SQL \\
-Libraries: Flask, FastAPI, PyODBC \\
+\begin{itemize} 
+    \item Designed and developed an innovative multi-tenant, multi-threaded
+    application for streamlined productivity
+    tracking, reducing annual costs by \textbf{Rs 53 Lakhs} by eliminating 
+    reliance on \href{https://desktime.com/}{external services}. \\
+    \item Facilitated confident remote talent recruitment through accurate productivity metrics.\\ 
+    \item Implemented features such as interventionless atomic app updates,
+    a live-updating configuration system, and encrypted logs for enhanced security. \\
+    \item Utilized a diverse tech stack including Python, Powershell, Pascal, and Win32 APIs. \\
+\end{itemize}
 \vspace*{2mm}
 
 {\textbf{MS-SQL Suite of Tools }}\hfill \href{https://github.com/swarnimcodes/Sequel}{Git}\\
-Crafted the MS-SQL Suite of Tools, a robust set of utilities tailored for SQL developers 
-and database administrators to streamline workflow processes. Designed to automate tasks, 
-the tools include features such as optimizing memory consumption by identifying memory leaks, 
-comparing stored procedures across databases, and visualizing their differences via automated reports and 
-split diff views. \\
-Languages: Python \\
-Libraries: Difflib, Sqlparse, PyODBC \\
+\begin{itemize} %\itemsep 0pt \topsep 0pt
+    \item Crafted a suite of tools for the Microsoft SQL Database for SQL developers 
+    and database administrators achieveing
+    85\% time reduction in SQL task flows. \\
+    \item Developed a tool to optimize memory consumption by identifying memory leaks in Stored Procedures. \\
+    \item Developed tools to compare and contrast database stored procedures and SQL functions,
+    visualizing differences via automated reports and generating alter scripts to synchronize databases. \\
+    \item Leveraged Python along with a host of useful libraries such as difflib, sqlparse, and pyodbc. \\
+\end{itemize}
+\vspace*{2mm}
+
+{\textbf{Persistent Queue System}}\hfill \href{https://github.com/swarnimcodes/kafkaesqueue}{Git}\\
+\begin{itemize} 
+    \item Developed a resilient queue system to automate time-intensive tasks,
+    ensuring FIFO completion and allowing for remote task addition. \\
+    \item Implemented persistence to maintain queue integrity during system crashes. \\
+    \item Currently enhancing the system with optional asynchronicity for improved
+    processing speed. \\
+    \item Used FastAPI as the backend framework along with Pydantic for data validation. \\
+\end{itemize}
 
 \vspace*{2mm}
+
+{\textbf{OpenAI APIs}}\hfill \href{https://github.com/swarnimcodes/openai-gen-co-and-qp}{Git}\\
+\begin{itemize} 
+    \item Developed a suite of APIs, harnessing the power of GPT-3.5 and GPT-4
+    to enhance educational practices.\\
+    \item Implemented AI solutions for rubrik-based grading, SQL-driven report generation,
+    question paper and course outcome generation to name a few. \\
+    \item Used OpenAI via Python frameworks such as Flask and FastAPI with MS-SQL as the database. \\
+\end{itemize}
+\vspace*{2mm}
+
+% {\textbf{Go API Blueprint} [Personal]\hfill \href{https://github.com/swarnimcodes/apigo}{Git}}
+% \begin{itemize}
+%     \item Developed a comprehensive API server blueprint using the standard \texttt{net/http} library in Go.
+%     % \item Allows you to spin up a web-server with sane defaults, built-in authorization, 
+%     % elegant middleware usage interface, database connectivity, and get going with your project
+%     \item Implemented essential features: authorization, middleware interface, and database connectivity.
+%     \item Designed for facilitating rapid project setup.
+% \end{itemize}
+% \vspace{2mm}
+
+{\textbf{Other Projects}\hfill \href{https://github.com/swarnimcodes/}{Git}} \\
+Other projects include: 
+\href{https://github.com/swarnimcodes/apigo}{golang API blueprint},
+% \href{https://github.com/swarnimcodes/kafkaesqueue}{a persistent queue system},
+\href{https://github.com/swarnimcodes/website-security-checker}{website vulnerability identifier},
+automation tools for Azure Blob Storage, etc.
+\vspace{2mm}
+
 
 \vspace{2mm}
 %==== Extra Curriculars ====%
 \header{Extra Curriculars}
 \vspace{1mm}
 
-\textbf{Swimming}: Represented Maharashtra in Swimming Nationals. Multiple State Level Gold Medalist.
+\textbf{Swimming}: Represented Maharashtra in National Championships. Multiple State Level Gold Medalist.
 
 \end{document}

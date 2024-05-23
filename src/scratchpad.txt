@@ -1,0 +1,49 @@
+As part of the R\&D team, my role was to transform lofty, unachievable and vague
+business ideas and transform them into tangible solutions and turn them into reality.
+Apart from that I also intensively worked in building crafty automation solutions
+mainly for the administration and management of Microsoft SQL Server and Azure Cloud Storage.
+My role also encompassed building internal tools that ease the development processes in the
+organisation.
+Due to my passion and knowledge of linux, i also guided the system administrators in the
+organisation to solve critical linux issues that risked hours of system downtime and loss
+of data and code.
+Due to my passion and curiosity of programming languages, my role also encompassed
+researching about technologies that aren't utilised in the organisation.
+Because of this, I was able to learn and develop an intuitive and feature-rich installation wizards
+for windows applications in an esoteric and then unknown language to me i.e. Pascal.
+Due to my adaptability, vision, and grasping power, i was also able to co-design scalable and robust
+system infrastructure for high-frequency high-traffic products from the ground up with the head of
+r&d in an exclusive team of 3.
+
+
+
+- As a part of the R\&D Department, I transformed ambitious buiness ideas
+into clear and actionable solutions, forming a bridge between vision and reality.
+- Co-designed robust and scalable system infrastructure for high-frequency,
+high-traffic products from the ground up, collaborating with the Head of R\&D
+in an exclusive three-person team.
+- Demonstrated exceptional adaptability by picking up new programming languages and
+skills required to drive the objective at hand to completion. For instance, independently
+acquired the skill to program in Pascal to build user-friendly and intuitive
+Windows installation wizards.
+- Relied on my passion and knowledge of linux to guide system administrators in
+resolving critical issues, preventing potential data loss and system downtime.
+- Built efficient automation solutions and internal tools to streamline 
+certain administrative and management tasks for the Microsoft SQL Server
+and Azure Cloud Storage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
